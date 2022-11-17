@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/styleBase.css">
+    <script defer type="module" src="../js/editUser.js"></script>
+    <title>Entrega Lista de Clientes</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="../../index.html">Listar Clientes</a></li>
+            <li><a href="./cadastrar.html">Criar Clientes</a></li>
+            <li><a href="">Editar Clientes</a></li>
+            <li><a href="./deletar.html">Deletar Clientes</a></li>
+        </ul>
+    </header>
+
+    <form id="form-select">
+        <label for="cliente">Escolha o cliente que quer editar</label>
+        <select id="select-user" name="cliente"></select>
+        <button>Buscar Cliente</button>
+    </form>
+
+    <form id="form-edit">
+        <h2>Editar cliente</h2>
+        <h3>Dados pessoais</h3>
+        <input required type="text" name="nome" placeholder="digite seu nome" />
+        <input required type="text" name="email" placeholder="digite sua email" />
+        <input required type="number" name="idade" placeholder="digite sua idade" />
+        <input required type="text" name="cpf" placeholder="digite seu cpf" />
+        <input required type="text" name="sexo" placeholder="digite seu sexo" />
+        <h3>Endereço</h3>
+        <input required class="endereco" type="number" name="cep" placeholder="digite seu cep" />
+        <input required class="endereco" type="text" name="rua" placeholder="digite sua rua" />
+        <input required class="endereco" type="number" name="numero" placeholder="digite o numero" />
+        <input required class="endereco" type="text" name="bairro" placeholder="digite seu bairro" />
+        <input required class="endereco" type="text" name="cidade" placeholder="digite sua cidade" />
+        <input required class="endereco" type="text" name="estado" placeholder="digite seu estado" />
+        <button type="submit">Atualizar Dados</button>
+    </form>
+
+
+</body>
+
+</html>

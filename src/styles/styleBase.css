@@ -1,0 +1,138 @@
+body{
+    background-color: #292929;
+}
+
+header{
+    background-color: whitesmoke;
+    padding: 1rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+header ul {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 750px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+main h2{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3rem;  
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1300px;
+    margin: 3rem auto;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+ul.container li.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+    border: solid 1px black;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 370px;
+    width: 100%;
+    min-height: 350px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 0 1rem 0 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+ul.container li.card:hover{
+    transform: scale(1.03);
+    background-color: rgb(255, 255, 255);
+}
+
+ul.container li.card:nth-child(even) {
+    border-radius: 1rem 0 1rem 0;
+}
+
+ul.container li.card h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+ul.container li.card h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+form{
+    max-width: 350px;
+    width: 100%;
+    border: solid 1px black;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin: 30px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    background-color: whitesmoke;
+}
+
+form h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+form h3{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+form input,
+.input{
+    padding: 10px 15px;
+    width: 80%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    border-radius: 3px;
+    border: solid 1px;
+    outline: none;
+}
+
+form button{
+    background-color: #292929;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+form select{
+    width: 80%;
+    outline: none;
+    cursor: pointer;
+}
+
+
